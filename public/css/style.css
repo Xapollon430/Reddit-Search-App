@@ -1,0 +1,34 @@
+#results {
+  margin-top: 30px;
+
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+#results div,
+img {
+  width: 100%;
+}
+
+#results .btn {
+  width: 100px;
+  height: 40px;
+  padding: 0px;
+  display: grid;
+  align-content: center;
+}
+
+#results .card {
+  display: grid;
+  grid-gap: 5px;
+  padding: 10px;
+  grid-template-rows: auto 1fr 30px 75px;
+}
+
+@media only screen and (max-width: 750px) {
+  #results {
+    grid-template-columns: 1fr 1fr;
+  }
+}
